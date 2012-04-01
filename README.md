@@ -6,9 +6,8 @@ A CodeIgniter helper to manipulate and return the current/new query string.
 Usage
 -----------------
 
-* Place ```query_string_helper.php``` in ```application/helpers```.
-* Load helper with ```$this->load->helper('query_string_helper')```
-* Use functions in views or controllers such as ```query_string()```
+1. Load the spark: ```$this->load->spark('query_string_helper/x.x.x');```
+2. Use functions in views or controllers such as ```query_string()```
 
 Change Log
 ---------------------
