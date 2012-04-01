@@ -11,7 +11,7 @@
  * @email		mike@mikefunk.com
  * 
  * @file		query_string_helper.php
- * @version		1.2.0
+ * @version		1.2.1
  * @date		04/01/2012
  */
 
