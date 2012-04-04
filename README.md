@@ -20,12 +20,22 @@ query\_string($add, $remove, $include\_current)
 uri\_query\_string( same params as above )
 ------------------
 
-This includes the full current uri with the query string on the end. It allows you to manipulate the query string in the same ways as above.
+This includes the current uri with the query string on the end. It allows you to manipulate the query string in the same ways as above.
 
-Now you can just replace all your ```$this->uri->uri_string()``` or ```current_url()``` calls with ```uri_query_string()``` and youÕre good to go!
+
+current\_url\_query\_string( same params as above )
+------------------
+
+This includes the ```current_url``` (from the url helper) with the query string on the end. It allows you to manipulate the query string in the same ways as above.
+
+Now you can just replace all your ```$this->uri->uri_string()``` with ```uri_query_string()``` and ```current_url()``` with ```base_query_string()``` or and you're good to go!
 
 Change Log
 ---------------------
+
+**1.2.2**
+
+* Added ```current_url_query_string()``` function.
 
 **1.2.1**
 

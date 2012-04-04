@@ -11,8 +11,8 @@
  * @email		mike@mikefunk.com
  * 
  * @file		query_string_helper.php
- * @version		1.2.1
- * @date		04/01/2012
+ * @version		1.2.2
+ * @date		04/04/2012
  */
 
 // --------------------------------------------------------------------------
@@ -95,6 +95,27 @@ function uri_query_string($add = '', $remove = '', $include_current = TRUE)
 {
 	$_ci =& get_instance();
 	return $_ci->uri->uri_string() . query_string($add, $remove, $include_current);
+}
+
+// --------------------------------------------------------------------------
+
+/**
+ * current_url_query_string function.
+ *
+ * returns uri_string with query_string on the end and current_url at the 
+ * beginning.
+ * 
+ * @param mixed $add (default: '')
+ * @param mixed $remove (default: '')
+ * @param bool $include_current (default: TRUE) Whether to include the 
+ * current page's query string or start fresh.
+ * @return string
+ */
+function current_url_query_string($add = '', $remove = '', $include_current = TRUE)
+{
+	$_ci =& get_instance();
+	$_ci->load->helper('url');
+	return current_url() . $this->uri_query_string($add, $remove, $include_current);
 }
 
 // --------------------------------------------------------------------------
