@@ -61,10 +61,10 @@ function query_string($add = '', $remove = '', $include_current = TRUE)
 		// remove from query_string
 		foreach ($remove as $rm)
 		{
-			$key = array_search($rm, $query_string);
+			$key = array_search($rm, array_keys($query_string));
 			if ($key !== FALSE)
 			{
-				unset($query_string[$key]);
+				unset($query_string[$rm]);
 			}
 		}
 	}
