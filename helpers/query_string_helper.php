@@ -115,7 +115,7 @@ function current_url_query_string($add = '', $remove = '', $include_current = TR
 {
 	$_ci =& get_instance();
 	$_ci->load->helper('url');
-	return current_url() . $this->uri_query_string($add, $remove, $include_current);
+	return current_url() . query_string($add, $remove, $include_current);
 }
 
 // --------------------------------------------------------------------------
