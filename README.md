@@ -33,6 +33,10 @@ Now you can just replace all your ```$this->uri->uri_string()``` with ```uri_que
 Change Log
 ---------------------
 
+**1.2.4**
+
+* Merged bugfix for current_url_query_string() thanks to [edmundask](https://github.com/edmundask).
+
 **1.2.3**
 
 * Merged bugfix which prevented removing keys. Thanks to [burakerdem](https://github.com/burakerdem).
