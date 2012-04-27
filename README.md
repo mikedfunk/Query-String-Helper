@@ -35,7 +35,7 @@ Change Log
 
 **1.2.4**
 
-* Merged bugfix for current_url_query_string() thanks to [edmundask](https://github.com/edmundask).
+* Merged bugfix for ```current_url_query_string()``` thanks to [edmundask](https://github.com/edmundask).
 
 **1.2.3**
 
